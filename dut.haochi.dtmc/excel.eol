@@ -1,0 +1,3 @@
+for(e in excel.all){
+	e.R1.println();
+}

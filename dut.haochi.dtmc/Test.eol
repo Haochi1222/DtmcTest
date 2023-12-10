@@ -1,0 +1,18 @@
+//for(d in Dtmc.all.parameters){
+//	for(s in d){
+//		s.println();
+//	}
+//}
+
+//for(d in Dtmc.all.name){
+//	d.println();
+//}
+
+for(s in State.all){
+	if(s.transitions.size() == 2){
+		s.name.println()+"->"+s.transitions.first().to.println();
+		
+		
+	}
+	}
+

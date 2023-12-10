@@ -1,0 +1,4 @@
+rule Markov2Text{
+	template:"DtmcTest.egl"
+	target:"dtmc.pm"
+}

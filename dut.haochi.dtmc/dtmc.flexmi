@@ -1,0 +1,62 @@
+<?nsuri dut.haochi.dtmc?>
+
+<Dtmc name="acme" parameters="p1,p2" >
+
+<State name="0">
+  	<Transition to= "1" probability="p1">  	
+  	</Transition>
+  	<Transition to= "2" probability="1-p1"> 	
+  	</Transition> 
+</State>
+  
+<State name="1" label="go">
+  	<Transition to= "8" probability="1">  	
+  	</Transition>
+</State>
+
+<State name="2">
+  	<Transition to= "3" probability="1">  	
+  	</Transition>
+</State>
+
+<State name="3">
+  	<Transition to= "4" probability="1">  	
+  	</Transition>
+</State>
+
+<State name="4">
+  	<Transition to= "5" probability="p2">  	
+  	</Transition>
+  	<Transition to= "7" probability="1-p2">  	
+  	</Transition>
+</State>
+
+<State name="5">
+  	<Transition to= "6" probability="1">  	
+  	</Transition>
+</State>
+
+<State name="6">
+  	<Transition to= "4" probability="1">  	
+  	</Transition>
+</State>
+  
+ <State name="7">
+  	<Transition to= "8" probability="1">  	
+  	</Transition>
+</State> 
+  
+<State name="8">
+  	<Transition to= "8" probability="1">  	
+  	</Transition>
+</State>
+
+
+<Reward name="time" >			    		
+	<Action name="s=5" value="3.2"/>
+</Reward>  
+<Reward name="cost" >			    		
+	<Action name="s=1" value="7"/>
+</Reward>	  		 	 		 	 			 	 	
+		 	 
+</Dtmc>
